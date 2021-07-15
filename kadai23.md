@@ -1,12 +1,10 @@
-entity "顧客マスタ" as customer<m_customers>
-<<M,MASTER_MARK_COLOR>>{
-+ customer_code[PK]
---
-pass
-name
-address
-tel
-mail
-del_flag
-reg_date
-}
+@startuml tables
+!include tables.pu
+
+companies ||-d--o{ users
+companies ||-o{ positions
+users ||-l-o| user_profiles
+users ||-d-o{ user_subordinate_users
+users ||-o{ user_positions
+positions ||-o{ user_positions
+@enduml
