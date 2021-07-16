@@ -1,5 +1,4 @@
 @startuml
-  https://github.com/shibakay/2021sys-design/blob/main/color.md
 
 !define MASTER_MARK_COLOR Orange 
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
@@ -31,5 +30,5 @@ package "ECサイト" as target_system {
       purchase_date
       total_price
 　  }
- }
+}
 @enduml
