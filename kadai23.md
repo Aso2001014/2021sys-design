@@ -25,13 +25,21 @@ package "ECサイト" as target_system {
         }
     
   entity "購入テーブル" as purchase <d_purchase> <<T,TRANSACTION_MARK_COLOR>> {
+       + order_id [PK]
+       --
+       customer_code[FK]
+       purchase_date
+       total_price
+　      }
+       
+   entity "購入詳細テーブル" as purchase_date <d_purchase_date> <<T,TRANSACTION_MARK_COLOR>> {
     + order_id [PK]
-  --
-  customer_code[FK]
-  purchase_date
-      total_price
-　  }
-   
+    + detall_id [PK]
+    --
+    item_code[FK]
+    prince
+    num
+    }
 entity "商品マスク" as m_items <m_items> <<M,MASTER_MARK_COLOR>> {
     + item_code[PK]
 }
