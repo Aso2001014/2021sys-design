@@ -43,5 +43,6 @@ package "ECサイト" as target_system {
 entity "商品マスク" as m_items <m_items> <<M,MASTER_MARK_COLOR>> {
     + item_code[PK]
 }
+}
 @enduml
 ```
