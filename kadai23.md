@@ -39,5 +39,6 @@ package "ECサイト" as target_system {
   prince
   num
 }
+}
 @enduml
 ```
