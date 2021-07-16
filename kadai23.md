@@ -10,7 +10,6 @@ skinparam class {
 }
 
 package "ECサイト" as target_system {
-    
     entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         + customer_code [PK]
         --
@@ -21,9 +20,9 @@ package "ECサイト" as target_system {
         mail
         del_flag
         reg_date
-    }
+   }
     
-    entity "購入テーブル"　as purchase <d_purchase> <<M,MASTER_MARK_COLOR>> {
+   entity "購入テーブル"　as purchase <d_purchase> <<M,MASTER_MARK_COLOR>> {
       + order_id [PK]
       --
       customer_code[FK]
