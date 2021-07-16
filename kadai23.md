@@ -31,5 +31,5 @@ package "ECサイト" as target_system {
       purchase_date
       total_price
 　  }
-   
+ }
 @enduml
