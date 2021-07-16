@@ -31,6 +31,7 @@ package "ECサイト" as target_system {
   purchase_date
       total_price
 　  }
+   
    entity "購入詳細テーブル" as purchase_date <d_purchase_date> <<T,TRANSACTION_MARK_COLOR>> {
     + order_id [PK]
     + detall_id [PK]
@@ -39,6 +40,8 @@ package "ECサイト" as target_system {
   prince
   num
 }
+entity "商品マスク" as m_items <m_items> <<M,MASTER_MARK_COLOR>> {
+    + item_code[PK]
 }
 @enduml
 ```
