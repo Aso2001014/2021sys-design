@@ -22,7 +22,14 @@ entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         purchase_date
         total_price
   }
-  
+  entity "購入詳細テーブル" as customer <d_purchase_date> <<T,TRANSACTION_MARK_COLOR>>
+        + order_id [PK]
+          detall_id[PK]
+        --
+        item_code[FK]
+        price
+        num
+  }
 }
 @enduml
 ```
