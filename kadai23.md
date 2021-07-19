@@ -15,7 +15,7 @@ entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         del_flag
         reg_date
     }
-    entity "購入テーブル" as order <d_purchase> <<T,TRANSACTION_MARK_COLOR>>
+    entity "購入テーブル" as order <d_purchase> <<T,TRANSACTION_MARK_COLOR>>{
         + order_id [PK]
         --
         customer_code[FK]
