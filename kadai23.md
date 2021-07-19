@@ -4,9 +4,8 @@
 !define MASTER_MARK_COLOR Orange
 !define TRANSACTION_MARK_COLOR DeepSkyBlue
 
-package "ECサイト" as target_system {
-    entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>>
-        + customer_code
+entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
+        + customer_code [PK]
         --
         pass
         name
@@ -15,7 +14,7 @@ package "ECサイト" as target_system {
         mail
         del_flag
         reg_date
-}
+    }
     entity "購入テーブル" as customer <d_purchase> <<T,TRANSACTION_MARK_COLOR>>
         + order_id [PK]
         --
