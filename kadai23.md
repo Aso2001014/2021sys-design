@@ -47,10 +47,13 @@ entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         name
         reg_deta
    }
-   customer |o--o{ order 
-   order ||--|{ orders
-   orders }--|| item
-   item }o--|| category 
+   customer       |o-ri-o{     order 
+
+order          ||-ri-|{     order_detail 
+
+order_detail    }-do-||     items 
+
+items          }o-le-||     category 
 }
 @enduml
 ```
