@@ -47,7 +47,7 @@ entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         name
         reg_deta
   }
-  m_customers|o-o{ d_purchase
+  order ||--|{ order_detail
 }
 @enduml
 ```
