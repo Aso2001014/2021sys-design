@@ -47,7 +47,6 @@ entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         name
         reg_deta
    }
-   customers |o--o {order 
    order ||--|{ orders
    orders }--|| item
    item }o--|| category 
