@@ -46,9 +46,4 @@
 |detail|varchar(500)|||| 
 |del_flag|int(11)||||
 |reg_date|date ||○||
-
-PRIMARY KEY (`item_code`), 
-
-  FOREIGN KEY PK_category(category_id) REFERENCES m_category(category_id) 
-
 ) 
