@@ -21,7 +21,7 @@
 |価格|price|int(11)||○|| 
 |数量|num|int(11)||○|| 
 
-**m_customers**
+### 商品マスタ(m_customers)
 |和名|属性名(カラム名)|型|PK|NN|FK|
 |:--|:--|:--|:--|:--|:--|
 |customer_code|varchar(50)|○|○||
@@ -33,14 +33,14 @@
 |del_flag|int(1)||||
 |reg_date|date||○||
 
-**m_category**
+### カテゴリマスタ (m_category)
 |属性名|型|PK|NN|FK|
 |:--|:--|:--|:--|:--|
 |category_id|int(11)|○|○||
 |name|varchar(20)||○||
 |reg_date|date||○|| 
 
-**m_items** 
+### 商品マスタ　（m_items）
 |属性名|型|PK|NN|FK|
 |:--|:--|:--|:--|:--|
 |item_code|int(11)|○|○||
