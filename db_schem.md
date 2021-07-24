@@ -46,4 +46,3 @@
 |detail|varchar(500)|||| 
 |del_flag|int(11)||||
 |reg_date|date ||○||
-) 
