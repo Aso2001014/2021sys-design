@@ -45,5 +45,6 @@ entity "カテゴリマスタ" as category <m_category>{
         reg_deta
             }
   }
+  customer ---- |{ rireki
 @enduml
 ```
