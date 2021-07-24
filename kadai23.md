@@ -46,5 +46,7 @@ entity "カテゴリマスタ" as category <m_category>{
             }
   }
   customer---|{ order
+  order---|{ orders
+  
 @enduml
 ```
