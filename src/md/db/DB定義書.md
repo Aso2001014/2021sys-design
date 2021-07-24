@@ -12,18 +12,18 @@
 |購入日|purchase_date|date||○||
 |総額|total_price|int(11)||○||
 
-**d_punchase_detail**
-|属性名|型|PK|NN|FK|
-|:--|:--|:--|:--|:--|
-|detail_id|bigint(20)|○|○||
-|order_id|bigint(20)|○|○|○|
-|item_code|int(11)||○||
-|price|int(11)||○|| 
-|num|int(11)||○|| 
+### 　購入詳細 (d_punchase_detail)
+|和名|属性名|型|PK|NN|FK|
+|:--|:--|:--|:--|:--|:--|
+|オーダー詳細ID|detail_id|bigint(20)|○|○||
+|オーダーID|order_id|bigint(20)|○|○|○|
+|商品コード|item_code|int(11)||○||
+|価格|price|int(11)||○|| 
+|数量|num|int(11)||○|| 
 
 **m_customers**
-|属性名|型|PK|NN|FK|
-|:--|:--|:--|:--|:--|
+|和名|属性名(カラム名)|型|PK|NN|FK|
+|:--|:--|:--|:--|:--|:--|
 |customer_code|varchar(50)|○|○||
 |pass|varchar(50)|○|○|○|
 |name|varchar(20)||○||
