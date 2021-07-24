@@ -45,7 +45,8 @@ entity "カテゴリマスタ" as category <m_category>{
         reg_deta
             }
   }
-  customer-left-|{ order
+  customer-left-{ order
+  oder-left-{ orders 
   
   
 @enduml
