@@ -41,7 +41,7 @@ entity "顧客マスタ" as customer <m_customers> <<M,MASTER_MARK_COLOR>> {
         del_flag
         reg_deta
    }
-   entity "カテゴリマスタ" as category <m_category> <<M,MASTER_MARK_COLOR>>{
+entity "カテゴリマスタ" as category <m_category> <<M,MASTER_MARK_COLOR>>{
         + contegory_id[PK]
         --
         name
